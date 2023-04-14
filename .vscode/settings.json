@@ -10,5 +10,9 @@
   "[markdown]": {
     "editor.formatOnSave": false
   },
-  "css.validate": false
+  "css.validate": false,
+  "jest.jestCommandLine": "yarn test",
+  "jest.rootPath": "app",
+  "jest.autoRun": { "watch": true },
+  "eslint.workingDirectories": ["./app"]
 }
