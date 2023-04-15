@@ -13,9 +13,12 @@
     "plugin:jest/recommended",
     "plugin:jest/style",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@next/next/recommended",
     "prettier"
   ],
-  "plugins": ["jest", "@typescript-eslint"],
+  "plugins": ["jest", "@typescript-eslint", "import", "react", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 6,
     "project": "./tsconfig.json" // tsconfig.jsonの場所を指定
@@ -28,6 +31,16 @@
         "alphabetize": {
           "order": "asc"
         }
+      }
+    ],
+    "import/no-anonymous-default-export": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "jsx-a11y/alt-text": [
+      "warn",
+      {
+        "elements": ["img"],
+        "img": ["Image"]
       }
     ]
   }

@@ -18,7 +18,15 @@ export default function Home() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            By <Image src='/vercel.svg' alt='Vercel Logo' className='dark:invert' width={100} height={24} priority />
+            By{' '}
+            <Image
+              src='/vercel.svg'
+              alt='Vercel Logo'
+              className='dark:invert'
+              width={100}
+              height={24}
+              priority
+            />
           </a>
         </div>
       </div>
@@ -47,7 +55,9 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p
+            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
+          >
             Find in-depth information about Next.js features and API.
           </p>
         </a>
@@ -64,7 +74,9 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p
+            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
+          >
             Learn about Next.js in an interactive course with&nbsp;quizzes!
           </p>
         </a>
@@ -81,7 +93,9 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p
+            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
+          >
             Discover and deploy boilerplate example Next.js&nbsp;projects.
           </p>
         </a>
@@ -98,7 +112,9 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p
+            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
+          >
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
