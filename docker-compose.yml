@@ -1,11 +1,11 @@
-version: '3.8'
+version: "3.8"
 services:
   next:
-    build: .
+    image: node:18.15-bullseye-slim
+    tty: true
+    command: sh -c "yarn install && yarn dev"
     ports:
       - 3000:3000
+    working_dir: /app
     volumes:
-      - .:/workspace:cached
-      - home:/home
-volumes:
-  home:
+      - ./app:/app
