@@ -1,29 +1,53 @@
 {
+  // JavaScriptの実行環境を指定
   "env": {
-    "es2020": true,
     "browser": true,
-    "node": true,
-    "es6": true,
+    "es2021": true,
     "jest": true
   },
+
+  // 構文解析に使用するパーサーの指定
+  // デフォルトではES5しかパースできない
+  "parser": "@typescript-eslint/parser",
+
+  // parserのオプションを設定
+  // JSXやECMAScriptのバージョンの設定など
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+
+  // 任意のルール実行時に適用される追加の共有設定
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+
+  // 追加ルールの指定
+  // pluginsにルールを指定しても、ルールは適用されていない状態
+  // 追加ルールを適用する場合は、extendsかrulesで設定が必要
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "extends": [
     "next/core-web-vitals",
     "plugin:import/recommended",
     "plugin:import/warnings",
-    "plugin:jest/recommended",
-    "plugin:jest/style",
-    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:@next/next/recommended",
     "prettier"
   ],
-  "plugins": ["jest", "@typescript-eslint", "import", "react", "jsx-a11y"],
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "project": "./tsconfig.json" // tsconfig.jsonの場所を指定
-  },
-  "parser": "@typescript-eslint/parser", // ESLintにTypeScriptを理解させる
+
   "rules": {
     "import/order": [
       "error",
@@ -33,15 +57,20 @@
         }
       }
     ],
-    "import/no-anonymous-default-export": "warn",
-    "react/react-in-jsx-scope": "off",
+    "indent": ["error", 2],
+    "no-var": "error",
+    "semi": "warn",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multiple-empty-lines": ["warn", { "max": 1 }],
+    "no-trailing-spaces": "error",
+    "space-infix-ops": "error",
+    "eqeqeq": "error",
+    "arrow-spacing": "error",
+    "no-console": "warn",
+    "import/no-unresolved": "off",
     "react/prop-types": "off",
-    "jsx-a11y/alt-text": [
-      "warn",
-      {
-        "elements": ["img"],
-        "img": ["Image"]
-      }
-    ]
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off"
   }
 }

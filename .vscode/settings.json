@@ -1,25 +1,35 @@
 {
-  // formatter
+  "extensions.ignoreRecommendations": true,
   "editor.tabSize": 2,
-  "editor.formatOnSave": true, // ファイル保存時の自動フォーマット有効
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettierに指定
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true // ファイル保存時に ESLint でフォーマット
-  },
-  "[markdown]": {
-    "editor.formatOnSave": false
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "[css]": {
     "editor.formatOnSave": false
   },
   "[scss]": {
     "editor.formatOnSave": false
   },
+
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "eslint.workingDirectories": ["wab_frontend"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "livePreview.portNumber": 8888,
+  "jest.jestCommandLine": "yarn test",
+  "jest.rootPath": "wab_frontend",
+  "jest.autoRun": { "watch": true },
+  "prettier.endOfLine": "lf",
+  "prettier.tabWidth": 2,
   "css.validate": false,
   "scss.validate": false,
-  "jest.jestCommandLine": "yarn test",
-  "jest.rootPath": "app",
-  "jest.autoRun": { "watch": true },
-  "eslint.workingDirectories": ["./app"],
-  "stylelint.validate": ["css", "scss"]
+  "stylelint.validate": ["css", "scss"],
+  "reactSnippets.settings.typescript": true,
+  "reactSnippets.settings.languageScopes": "typescript,typescriptreact,javascript,javascriptreact"
 }

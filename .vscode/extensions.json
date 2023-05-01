@@ -1,9 +1,14 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
     "ms-vscode.live-server",
-    "orta.vscode-jest"
+    "orta.vscode-jest",
+    "stylelint.vscode-stylelint",
+    "csstools.postcss",
+    "vscodeshift.material-ui-snippets",
+    "dsznajder.es7-react-js-snippets",
+    "PulkitGangwar.nextjs-snippets",
+    "wayou.vscode-todo-highlight"
   ]
 }
