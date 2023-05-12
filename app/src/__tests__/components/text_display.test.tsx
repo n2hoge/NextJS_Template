@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react';
-import React from 'react';
 import TextDisplay from '@/components/text_display';
 import '@testing-library/jest-dom';
 

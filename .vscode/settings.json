@@ -14,7 +14,7 @@
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
-  "eslint.workingDirectories": ["wab_frontend"],
+  "eslint.workingDirectories": ["app"],
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
@@ -23,7 +23,7 @@
   },
   "livePreview.portNumber": 8888,
   "jest.jestCommandLine": "yarn test",
-  "jest.rootPath": "wab_frontend",
+  "jest.rootPath": "app",
   "jest.autoRun": { "watch": true },
   "prettier.endOfLine": "lf",
   "prettier.tabWidth": 2,
