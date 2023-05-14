@@ -69,6 +69,7 @@
     "arrow-spacing": "error",
     "no-console": "warn",
     "import/no-unresolved": "off",
+    "import/no-namespace": "error",
     "react/prop-types": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
